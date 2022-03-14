@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinJournal">
         <activity
+            android:name=".DiceRoller"
+            android:exported="false" />
+        <activity
             android:name=".BirthdayCard"
             android:exported="false" />
         <activity
