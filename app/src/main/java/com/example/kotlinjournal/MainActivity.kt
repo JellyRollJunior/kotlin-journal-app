@@ -23,16 +23,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * A Dice with a variable number of sides
-     */
-    class Dice(private val numSides: Int) {
-
-        fun roll(): Int {
-            return (1..numSides).random()
-        }
-    }
-
-    /**
      * Roll the dice and update the screen with the result.
      */
     private fun rollDice() {
@@ -54,3 +44,14 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show()
     }
 }
+
+/**
+ * A Dice with a variable number of sides
+ */
+class Dice(private val numSides: Int) {
+
+    fun roll(): Int {
+        return (1..numSides).random()
+    }
+}
+
