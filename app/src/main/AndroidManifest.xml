@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinJournal">
         <activity
+            android:name=".Debugging"
+            android:exported="false" />
+        <activity
             android:name=".DiceRoller"
             android:exported="false" />
         <activity

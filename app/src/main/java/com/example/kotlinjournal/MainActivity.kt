@@ -2,10 +2,13 @@ package com.example.kotlinjournal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+
+private const val TAG = "MainActivity"
 
 /**
  * This activity allows the user to roll a dice and view the result
