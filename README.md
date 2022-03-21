@@ -6,3 +6,7 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
   - Basic when statements
   - Basic Unit Testing 
   - Importing Drawables
+- Lemonade app
+- Tip Calculator
+  - View Binding
+  - NumberFormat 
