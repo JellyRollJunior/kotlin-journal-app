@@ -10,3 +10,4 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
 - Tip Calculator
   - View Binding
   - NumberFormat 
+  - Adaptive Icons
