@@ -71,7 +71,7 @@
 
     </RadioGroup>
 
-    <androidx.appcompat.widget.SwitchCompat
+    <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/round_up_switch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
