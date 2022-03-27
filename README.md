@@ -12,3 +12,6 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
   - NumberFormat 
   - Themes
   - Adaptive Icons
+  - Material Design
+   - TextInputLayouts
+   - SwitchMaterial 
