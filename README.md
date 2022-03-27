@@ -13,5 +13,5 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
   - Themes
   - Adaptive Icons
   - Material Design
-   - TextInputLayouts
-   - SwitchMaterial 
+    - TextInputLayouts
+    - SwitchMaterial 
