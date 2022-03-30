@@ -15,3 +15,4 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
   - Material Design
     - TextInputLayouts
     - SwitchMaterial 
+  - Vector Assets
