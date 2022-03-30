@@ -10,3 +10,8 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
 - Tip Calculator
   - View Binding
   - NumberFormat 
+  - Themes
+  - Adaptive Icons
+  - Material Design
+    - TextInputLayouts
+    - SwitchMaterial 
