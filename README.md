@@ -17,3 +17,4 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
     - SwitchMaterial 
   - Vector Assets
   - On Key listeners
+  - Basic Instrumentation Testing
