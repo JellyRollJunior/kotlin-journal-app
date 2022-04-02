@@ -25,7 +25,7 @@ import java.util.regex.Pattern.matches
 class CalculatorTests {
 
     @get:Rule()
-    val activity = ActivityScenarioRule(MainActivity::class.java)
+    val activity = ActivityScenarioRule(TipCalculator::class.java)
 
     @Test
     fun calculate_20_percent_tip() {
