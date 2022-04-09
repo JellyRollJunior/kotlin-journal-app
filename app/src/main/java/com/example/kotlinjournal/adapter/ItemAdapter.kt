@@ -15,6 +15,14 @@ class ItemAdapter(
     private val dataset: List<Affirmation>
 ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
+    /**
+     * RecyclerView doesn't interact directly with item views, but deals with ViewHolders instead.
+     * A ViewHolder represents a single list item view in RecyclerView, and can be reused
+     * when possible. A ViewHolder instance holds references to the individual views within a
+     * list item layout (hence the name "view holder"). This makes it easier to update the list
+     * item view with new data. View holders also add information that RecyclerView uses to
+     * efficiently move views around the screen.
+     */
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
     }
