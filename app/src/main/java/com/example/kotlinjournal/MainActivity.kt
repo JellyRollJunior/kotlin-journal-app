@@ -2,9 +2,12 @@ package com.example.kotlinjournal
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.kotlinjournal.adapter.ItemAdapter
 import com.example.kotlinjournal.data.Datasource
 import com.example.kotlinjournal.databinding.ActivityAffirmationsBinding
 import com.example.kotlinjournal.databinding.ActivityMainBinding
+import javax.sql.DataSource
 
 private const val TAG = "MainActivity"
 
@@ -32,6 +35,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAffirmationsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val myDataset = Datasource().loadAffirmations()
+        val recyclerView = binding.recyclerView
+        recyclerView.adapter = ItemAdapter(this, myDataset)
+
+        /**
+         * Since the layout size of your RecyclerView is fixed in the activity layout, you can set
+         * the setHasFixedSize parameter of the RecyclerView to true. This setting is only needed to
+         * improve performance. Use this setting if you know that changes in content do not change
+         * the layout size of the RecyclerView.
+         */
+        recyclerView.setHasFixedSize(true)
 
     }
 }
