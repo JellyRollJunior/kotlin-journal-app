@@ -18,3 +18,9 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
   - Vector Assets
   - On Key listeners
   - Basic Instrumentation Testing
+- Affirmations
+  - Recycler Views
+  - Adapters
+  - Builder Pattern
+  - RecyclerView Instrumentation Tests
+  - Basic Unit Tests
