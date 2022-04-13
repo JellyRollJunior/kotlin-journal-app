@@ -24,3 +24,7 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
   - Builder Pattern
   - RecyclerView Instrumentation Tests
   - Basic Unit Tests
+- Dogglers
+  - String resource formatting   
+  - Activity switching
+  - Recycler view grid layout in XML
