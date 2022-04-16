@@ -3,12 +3,7 @@ package com.example.kotlinjournal
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
-import com.example.kotlinjournal.adapter.ItemAdapter
-import com.example.kotlinjournal.data.Datasource
-import com.example.kotlinjournal.databinding.ActivityAffirmationsBinding
 import com.example.kotlinjournal.databinding.ActivityMainBinding
-import javax.sql.DataSource
 
 private const val TAG = "MainActivity"
 
@@ -25,8 +20,10 @@ class MainActivity : AppCompatActivity() {
         // launch apps
         binding.birthdayBtn.setOnClickListener { launchBirthday() }
         binding.diceRollBtn.setOnClickListener { launchDiceRoller() }
+        binding.lemonadeBtn.setOnClickListener { launchLemonade() }
         binding.tipTimeBtn.setOnClickListener { launchTipTime() }
         binding.affirmationsBtn.setOnClickListener { launchAffirmations() }
+        binding.dogglersBtn.setOnClickListener { launchDogglers() }
     }
 
     private fun launchBirthday() {
@@ -39,6 +36,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(listIntent)
     }
 
+    private fun launchLemonade() {
+        listIntent = Intent(this, Lemonade::class.java)
+        startActivity(listIntent)
+    }
+
     private fun launchTipTime() {
         listIntent = Intent(this, TipCalculator::class.java)
         startActivity(listIntent)
@@ -46,6 +48,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun launchAffirmations() {
         listIntent = Intent(this, AffirmationMain::class.java)
+        startActivity(listIntent)
+    }
+
+    private fun launchDogglers() {
+        listIntent = Intent(this, Dogglers::class.java)
         startActivity(listIntent)
     }
 }

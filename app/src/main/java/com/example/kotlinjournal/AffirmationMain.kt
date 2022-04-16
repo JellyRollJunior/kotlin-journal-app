@@ -2,10 +2,9 @@ package com.example.kotlinjournal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kotlinjournal.adapter.ItemAdapter
-import com.example.kotlinjournal.data.Datasource
+import com.example.kotlinjournal.adapter.AffirmationItemAdapter
+import com.example.kotlinjournal.data.AffirmationsDataSource
 import com.example.kotlinjournal.databinding.ActivityAffirmationsBinding
-import com.example.kotlinjournal.model.Affirmation
 
 /**
  * In this task, you will set up a RecyclerView to display the list of Affirmations.
@@ -32,9 +31,9 @@ class AffirmationMain : AppCompatActivity() {
         binding = ActivityAffirmationsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val myDataset = Datasource().loadAffirmations()
+        val myDataset = AffirmationsDataSource().loadAffirmations()
         val recyclerView = binding.recyclerView
-        recyclerView.adapter = ItemAdapter(this, myDataset)
+        recyclerView.adapter = AffirmationItemAdapter(this, myDataset)
 
         /**
          * Since the layout size of your RecyclerView is fixed in the activity layout, you can set

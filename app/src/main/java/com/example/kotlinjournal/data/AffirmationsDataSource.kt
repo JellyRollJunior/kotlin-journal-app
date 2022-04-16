@@ -3,7 +3,7 @@ package com.example.kotlinjournal.data
 import com.example.kotlinjournal.R
 import com.example.kotlinjournal.model.Affirmation
 
-class Datasource {
+class AffirmationsDataSource {
 
     fun loadAffirmations(): List<Affirmation> {
         return listOf<Affirmation>(

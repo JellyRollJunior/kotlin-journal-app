@@ -1,7 +1,7 @@
 package com.example.kotlinjournal
 
 import android.content.Context
-import com.example.kotlinjournal.adapter.ItemAdapter
+import com.example.kotlinjournal.adapter.AffirmationItemAdapter
 import com.example.kotlinjournal.model.Affirmation
 import org.junit.Assert.assertEquals
 import org.junit.Test
@@ -31,7 +31,7 @@ class AffirmationsAdapterTests {
             Affirmation(R.string.affirmation1, R.drawable.image1),
             Affirmation(R.string.affirmation2, R.drawable.image2)
         )
-        val adapter = ItemAdapter(context, data)
+        val adapter = AffirmationItemAdapter(context, data)
 
         /**
          * You're already familiar with the assertEquals() method, but it's worth examining the

@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinJournal">
         <activity
+            android:name=".GridListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerticalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dogglers"
+            android:exported="false" />
+        <activity
+            android:name=".Lemonade"
+            android:exported="false" />
+        <activity
             android:name=".AffirmationMain"
             android:exported="false" />
         <activity

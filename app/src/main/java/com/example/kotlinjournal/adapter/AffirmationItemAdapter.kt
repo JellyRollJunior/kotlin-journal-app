@@ -11,10 +11,10 @@ import com.example.kotlinjournal.R
 import com.example.kotlinjournal.model.Affirmation
 
 
-class ItemAdapter(
+class AffirmationItemAdapter(
     private val context: Context,
     private val dataset: List<Affirmation>
-) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+) : RecyclerView.Adapter<AffirmationItemAdapter.ItemViewHolder>() {
 
     /**
      * RecyclerView doesn't interact directly with item views, but deals with ViewHolders instead.
@@ -61,7 +61,7 @@ class ItemAdapter(
          child views like the TextView).
          */
         val adapterLayout = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_item, parent, false)
+            .inflate(R.layout.affirmation_list_item, parent, false)
 
         return ItemViewHolder(adapterLayout)
     }
