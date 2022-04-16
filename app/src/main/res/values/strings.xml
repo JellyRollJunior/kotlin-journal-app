@@ -1,11 +1,16 @@
 <resources>
     <string name="app_name">KotlinJournal</string>
+
+    <string name="birthday_app">Birthday Card</string>
     <string name="happy_birthday_zoe">Happy Birthday, Zoe!</string>
     <string name="from_brandon">From, Brandon.</string>
     <string name="cupcake_background_cd">Cupcake Background</string>
+
+    <string name="dice_roller_app">Dice Roller</string>
     <string name="roll">Roll</string>
+
+    <string name="tip_time_app">Tip Time</string>
     <string name="cost_of_service">Cost of Service</string>
-    <string name="tip_time">Tip Time</string>
     <string name="how_was_the_service">How was the service?</string>
     <string name="amazing_service">Amazing (20%)</string>
     <string name="good_service">Good (18%)</string>
@@ -14,6 +19,7 @@
     <string name="calculate">Calculate</string>
     <string name="tip_amount">Tip Amount: %s</string>
 
+    <string name="affirmations_app">Affirmations</string>
     <string name="affirmation1">I am strong.</string>
     <string name="affirmation2">I believe in myself.</string>
     <string name="affirmation3">Each day is a new opportunity to grow and be a better version of myself.</string>

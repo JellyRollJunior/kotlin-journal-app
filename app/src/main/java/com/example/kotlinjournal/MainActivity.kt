@@ -1,5 +1,6 @@
 package com.example.kotlinjournal
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -11,42 +12,40 @@ import javax.sql.DataSource
 
 private const val TAG = "MainActivity"
 
-/**
- * In this task, you will set up a RecyclerView to display the list of Affirmations.
- * There are a number of pieces involved in creating and using a RecyclerView.
- * You can think of them as a division of labor. The diagram below shows an overview,
- * and you will learn more about each piece as you implement it.
- *
- *     item - One data item of the list to display. Represents one Affirmation object in your app.
- *     Adapter - Takes data and prepares it for RecyclerView to display.
- *     ViewHolders - A pool of views for RecyclerView to use and reuse to display affirmations.
- *     RecyclerView - Views on screen
- *
- * RecyclerView supports displaying items in different ways, such as a linear list or a grid.
- * Arranging the items is handled by a LayoutManager. The Android framework provides layout
- * managers for basic item layouts. The Affirmations app displays items as a vertical list,
- * so you can use the LinearLayoutManager.
- */
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityAffirmationsBinding
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var listIntent: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAffirmationsBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val myDataset = Datasource().loadAffirmations()
-        val recyclerView = binding.recyclerView
-        recyclerView.adapter = ItemAdapter(this, myDataset)
+        // launch apps
+        binding.birthdayBtn.setOnClickListener { launchBirthday() }
+        binding.diceRollBtn.setOnClickListener { launchDiceRoller() }
+        binding.tipTimeBtn.setOnClickListener { launchTipTime() }
+        binding.affirmationsBtn.setOnClickListener { launchAffirmations() }
+    }
 
-        /**
-         * Since the layout size of your RecyclerView is fixed in the activity layout, you can set
-         * the setHasFixedSize parameter of the RecyclerView to true. This setting is only needed to
-         * improve performance. Use this setting if you know that changes in content do not change
-         * the layout size of the RecyclerView.
-         */
-        recyclerView.setHasFixedSize(true)
+    private fun launchBirthday() {
+        listIntent = Intent(this, BirthdayCard::class.java)
+        startActivity(listIntent)
+    }
 
+    private fun launchDiceRoller() {
+        listIntent = Intent(this, DiceRoller::class.java)
+        startActivity(listIntent)
+    }
+
+    private fun launchTipTime() {
+        listIntent = Intent(this, TipCalculator::class.java)
+        startActivity(listIntent)
+    }
+
+    private fun launchAffirmations() {
+        listIntent = Intent(this, AffirmationMain::class.java)
+        startActivity(listIntent)
     }
 }
