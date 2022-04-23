@@ -25,7 +25,7 @@
             android:name=".Lemonade"
             android:exported="false" />
         <activity
-            android:name=".AffirmationMain"
+            android:name=".AffirmationsMain"
             android:exported="false" />
         <activity
             android:name=".TipCalculator"

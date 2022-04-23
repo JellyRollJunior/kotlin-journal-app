@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchAffirmations() {
-        listIntent = Intent(this, AffirmationMain::class.java)
+        listIntent = Intent(this, AffirmationsMain::class.java)
         startActivity(listIntent)
     }
 

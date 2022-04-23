@@ -22,7 +22,7 @@ import com.example.kotlinjournal.databinding.ActivityAffirmationsBinding
  * managers for basic item layouts. The Affirmations app displays items as a vertical list,
  * so you can use the LinearLayoutManager.
  */
-class AffirmationMain : AppCompatActivity() {
+class AffirmationsMain : AppCompatActivity() {
 
     private lateinit var binding: ActivityAffirmationsBinding
 

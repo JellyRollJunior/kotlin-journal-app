@@ -19,7 +19,7 @@ class AffirmationsListTests {
      *  Make an activity scenario rule for the main activity.
      */
     @get:Rule
-    val activity = ActivityScenarioRule(MainActivity::class.java)
+    val activity = ActivityScenarioRule(AffirmationsMain::class.java)
 
     @Test
     fun scroll_to_data() {
