@@ -29,3 +29,11 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
   - String resource formatting   
   - Activity switching
   - Recycler view grid layout in XML
+- Words
+  - Intents
+  - Navigation Component
+  - Activity Lifecycle
+  - Fragment Lifecycle
+- Unscramble
+  - App Architecture
+  - View Model
