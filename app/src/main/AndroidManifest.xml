@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinJournal">
         <activity
+            android:name=".Unscramble"
+            android:exported="false" />
+        <activity
             android:name=".GridListActivity"
             android:exported="false" />
         <activity

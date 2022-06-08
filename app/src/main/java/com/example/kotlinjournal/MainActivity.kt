@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding.tipTimeBtn.setOnClickListener { launchTipTime() }
         binding.affirmationsBtn.setOnClickListener { launchAffirmations() }
         binding.dogglersBtn.setOnClickListener { launchDogglers() }
+        binding.unscrambleBtn.setOnClickListener { launchUnscramble() }
     }
 
     private fun launchBirthday() {
@@ -53,6 +54,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun launchDogglers() {
         listIntent = Intent(this, Dogglers::class.java)
+        startActivity(listIntent)
+    }
+
+    private fun launchUnscramble() {
+        listIntent = Intent(this, Unscramble::class.java)
         startActivity(listIntent)
     }
 }
