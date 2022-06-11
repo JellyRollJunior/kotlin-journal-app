@@ -37,3 +37,4 @@ I'm currently going through the Kotlin tutorial on Google Developers and this re
 - Unscramble
   - App Architecture
   - View Model
+  - Data Binding
